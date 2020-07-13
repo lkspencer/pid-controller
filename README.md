@@ -62,7 +62,7 @@ var temperaturesimulation = function() {
     if (Math.round(temperature * 100) / 100 == 1) {
         PID.setMode(newPid.Mode.AUTOMATIC)
     }
-    console.log(`Output : ${iosp.output} ; Temp : ${Math.round(temperature * 100) / 100 + }°c`);
+    console.log(`Output : ${iosp.output} ; Temp : ${Math.round(temperature * 100) / 100}°c`);
 };
 setInterval(temperaturesimulation, timeframe);
 ```
